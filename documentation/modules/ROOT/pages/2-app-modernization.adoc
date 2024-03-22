@@ -34,7 +34,7 @@ image:module2/software_template_quarkus.png[width=50%]
 
 *Step 1* - GitLab の場所に関する情報を入力します:
 
-* *Repo Host*: OpenShift にすでにインストールされている GitLab ドメインです。Red Hat Developer Hub は、この入力データを使用してソースリポジトリとマニフェストをアップロードします。
+* *Repo Host*: OpenShift にすでにインストールされている GitLab ドメインです。Red Hat Developer Hub はこの入力データを使用してソースリポジトリとマニフェストをアップロードします。
 
 ** *Repo Host* OpenShift のドメインに置き換えます: 
 
@@ -46,13 +46,13 @@ gitlab-gitlab.%SUBDOMAIN%
 
 image:module2/st_gitlab_info.png[width=65%]  
 
-* *Repo Group*: すでに構成されている GitLabの組織です。Red Hat Developer Hub は、この入力データを使用してソースリポジトリとマニフェストをアップロードします。
+* *Repo Group*: すでに構成されている GitLabの組織です。Red Hat Developer Hub はこの入力データを使用してソースリポジトリとマニフェストをアップロードします。
 
 * *Next Step* をクリックします。
 
 *Step 2* - クラスター ID に関する情報を入力します:
 
-* *Cluster Id*: OpenShift のドメインです。Red Hat Developer Hub は、この入力データを使用してアプリケーションをビルドおよびデプロイします。
+* *Cluster Id*: OpenShift のドメインです。Red Hat Developer Hub はこの入力データを使用してアプリケーションをビルドおよびデプロイします。
 
 ** *Cluster Id* を OpenShift のドメインに置き換えます: 
 
@@ -64,7 +64,7 @@ image:module2/st_gitlab_info.png[width=65%]
 
 image:module2/st_component_clusterid.png[width=65%]  
 
-* *Namespace*: OpenShift の namespace です。Red Hat Developer Hub は、このnamespace でアプリケーションをビルドおよびデプロイします。
+* *Namespace*: OpenShift の namespace です。Red Hat Developer Hub はこのnamespace でアプリケーションをビルドおよびデプロイします。
 
 ** *N* をユーザー番号に置き換えます:
 
@@ -76,9 +76,9 @@ rhdhub-%USERID%
 
 image:module2/st_component_namespace.png[width=40%]  
 
-*注*: 各ラボ参加者には、すべてのアプリケーションで使用される一意の namespace　がすでに割り当てられています。各アプリケーションには、ユーザー名に基づいた共有 ID があります。
+*注*: 各ラボ参加者にはすべてのアプリケーションで使用する一意の namespace がすでに割り当てられています。各アプリケーションにはユーザー名に基づいた共有 ID があります。
 
-* *Owner*: 所有者はあなたのユーザー ID です。Red Hat Developer Hub は、ビルドおよびデプロイメントのプロセスでこの入力データを使用します。
+* *Owner*: 所有者はあなたのユーザー ID です。Red Hat Developer Hub はビルドおよびデプロイメントのプロセスでこの入力データを使用します。
 ** ユーザー ID を書きます: 
 
 [.console-input]
@@ -166,7 +166,7 @@ image:module2/software_templates_spring.png[width=50%]
 
 *Step 1* - GitLab の場所に関する情報を入力します:
 
-* *Repo Host*: OpenShift にすでにインストールされている GitLab ドメインです。Red Hat Developer Hub は、この入力データを使用してソースリポジトリとマニフェストをアップロードします。
+* *Repo Host*: OpenShift にすでにインストールされている GitLab ドメインです。Red Hat Developer Hub はこの入力データを使用してソースリポジトリとマニフェストをアップロードします。
 
 ** *Repo Host* OpenShift のドメインに置き換えます: 
 
@@ -178,13 +178,13 @@ gitlab-gitlab.%SUBDOMAIN%
 
 image:module2/st_gitlab_info.png[width=65%]  
 
-* *Repo Group*: すでに構成されている GitLabの組織です。Red Hat Developer Hub は、この入力データを使用してソースリポジトリとマニフェストをアップロードします。
+* *Repo Group*: すでに構成されている GitLabの組織です。Red Hat Developer Hub はこの入力データを使用してソースリポジトリとマニフェストをアップロードします。
 
 * Click on *Next Step*
 
 *Step 2* - クラスター ID に関する情報を入力します:
 
-* *Cluster Id*: OpenShift のドメインです。Red Hat Developer Hub は、この入力データを使用してアプリケーションをビルドおよびデプロイします。
+* *Cluster Id*: OpenShift のドメインです。Red Hat Developer Hub はこの入力データを使用してアプリケーションをビルドおよびデプロイします。
 
 ** *Cluster Id* を OpenShift のドメインに置き換えます: 
 
@@ -196,7 +196,7 @@ image:module2/st_gitlab_info.png[width=65%]
 
 image:module2/st_component_clusterid.png[width=40%]  
 
-*Namespace*:  OpenShift の namespace です。Red Hat Developer Hub は、このnamespace でアプリケーションをビルドおよびデプロイします。
+*Namespace*:  OpenShift の namespace です。Red Hat Developer Hub はこのnamespace でアプリケーションをビルドおよびデプロイします。
 
 ** *Namespace* を次のものに置き換えます: 
 
@@ -208,9 +208,9 @@ rhdhub-%USERID%
 
 image:module2/st_component_namespace.png[width=40%]  
 
-*注*: 各ラボ参加者には、すべてのアプリケーションで使用される一意の namespace　がすでに割り当てられています。各アプリケーションには、ユーザー名に基づいた共有 ID があります。
+*注*: 各ラボ参加者にはすべてのアプリケーションで使用する一意の namespace がすでに割り当てられています。各アプリケーションにはユーザー名に基づいた共有 ID があります。
 
-* *Owner*: 所有者はあなたのユーザー ID です。Red Hat Developer Hub は、ビルドおよびデプロイメントのプロセスでこの入力データを使用します。
+* *Owner*: 所有者はあなたのユーザー ID です。Red Hat Developer Hub はビルドおよびデプロイメントのプロセスでこの入力データを使用します。
 ** ユーザー ID を書きます: 
 
 [.console-input]
@@ -251,7 +251,7 @@ image:module2/st_component_review_spring.png[width=80%]
 
 * *Create* をクリックします。
 
-=== 2.3.2 Explore the application overview
+=== 2.3.2 アプリケーションの概要の探索
 
 *おめでとうございます！* あなたは *Red Hat Developer Hub* を使用して最初のSpring Bootアプリケーションをビルドしました。コンポーネントとアプリケーションの概要を探索してみましょう。
 
