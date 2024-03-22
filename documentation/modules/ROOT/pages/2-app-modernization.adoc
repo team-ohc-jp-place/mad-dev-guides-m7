@@ -36,7 +36,7 @@ image:module2/software_template_quarkus.png[width=50%]
 
 * *Repo Host*: OpenShift にすでにインストールされている GitLab ドメインです。Red Hat Developer Hub はこの入力データを使用してソースリポジトリとマニフェストをアップロードします。
 
-** *Repo Host* OpenShift のドメインに置き換えます: 
+** *Repo Host* をOpenShift のドメインに置き換えます: 
 
 [.console-input]
 [source,bash]
@@ -168,7 +168,7 @@ image:module2/software_templates_spring.png[width=50%]
 
 * *Repo Host*: OpenShift にすでにインストールされている GitLab ドメインです。Red Hat Developer Hub はこの入力データを使用してソースリポジトリとマニフェストをアップロードします。
 
-** *Repo Host* OpenShift のドメインに置き換えます: 
+** *Repo Host* をOpenShift のドメインに置き換えます:
 
 [.console-input]
 [source,bash]
@@ -180,7 +180,7 @@ image:module2/st_gitlab_info.png[width=65%]
 
 * *Repo Group*: すでに構成されている GitLabの組織です。Red Hat Developer Hub はこの入力データを使用してソースリポジトリとマニフェストをアップロードします。
 
-* Click on *Next Step*
+* *Next Step* をクリックします。
 
 *Step 2* - クラスター ID に関する情報を入力します:
 
@@ -196,7 +196,7 @@ image:module2/st_gitlab_info.png[width=65%]
 
 image:module2/st_component_clusterid.png[width=40%]  
 
-*Namespace*:  OpenShift の namespace です。Red Hat Developer Hub はこのnamespace でアプリケーションをビルドおよびデプロイします。
+* *Namespace*:  OpenShift の namespace です。Red Hat Developer Hub はこのnamespace でアプリケーションをビルドおよびデプロイします。
 
 ** *Namespace* を次のものに置き換えます: 
 
