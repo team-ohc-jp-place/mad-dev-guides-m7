@@ -1,183 +1,183 @@
 = 1. Introduction and Overview - 15 minutes
 :imagesdir: ../assets/images
 
-== 1.1 Introduction to this module
+== 1.1 導入と概要 - 15 分
 
-This module shows how developers can build, deploy, and manage applications using Red Hat Developer Hub. Red Hat Developer Hub will allow you to perform the Software Development activities with an accelerated approach by reducing developer friction and improving time to market.
+このモジュールでは、開発者が Red Hat Developer Hub を使用してアプリケーションを構築、デプロイ、管理する方法を示します。Red Hat Developer Hub を使用すると、開発者の疲弊を軽減し、市場投入までの時間を短縮し、迅速なアプローチでソフトウェア開発活動を実行できるようになります。
 
-The module starts with the product overview, followed by its architecture and a tour of the main functionalities. 
-You will implement two use cases, from *maintaining a new application* that requires bug fixing to *modernizing a set of microservices* by moving them into OpenShift.
+このモジュールは製品の概要から始まり、次にそのアーキテクチャと主な機能のツアーが続きます。
+バグ修正が必要な *新しいアプリケーションの修正* から、 *一連のマイクロサービスを OpenShift に移動して最新化する* まで、2 つのユースケースを実装します。
 
-== 1.2 Red Hat Developer Hub Overview
+== 1.2 Red Hat Developer Hubの概要
 
-=== 1.2.1 What is Red Hat Developer Hub?
+=== 1.2.1 Red Hat Developer Hub とは何か
 
-https://developers.redhat.com/rhdh[Red Hat Developer Hub^] is an enterprise-grade, open system for building developer portals containing a supported and opinionated framework. Red Hat Developer Hub helps reduce friction and frustration for engineering teams while boosting their productivity and increasing their organization's competitive advantages. Red Hat Developer Hub is based on the upstream project https://backstage.spotify.com/[Backstage^]. 
+https://developers.redhat.com/rhdh[Red Hat Developer Hub^] は、Red Hatからのサポートを受けられる独自のフレームワークを含む開発者ポータルを構築するためのエンタープライズ グレードのオープン システムです。Red Hat Developer Hub は、エンジニアリング チームの疲弊やフラストレーションを軽減しながら、生産性を向上させ、組織の競争上の優位性を高めるのに役立ちます。Red Hat Developer Hub は https://backstage.spotify.com/[Backstage^] を、アップストリーム プロジェクトとして開発されています。 
 
-Red Hat Developer Hub can build and deploy applications on the hybrid cloud supporting diverse infrastructure such as cloud services and on-prem. 
+Red Hat Developer Hub は、クラウドサービスやオンプレミスなどの多様なインフラストラクチャで動作するハイブリッド クラウド上でアプリケーションを構築およびデプロイできます。
 
-=== 1.2.2 Current Business Challenges
-* Time to market: The learning curve required to create, build and maintain containers slow down software development
-* Hiring, Retaining, and Training Technical Experts: Time spent and resource availability decrease the opportunity to scale technical skills into the organization at different levels.
-* Reducing technical debt through modernization: Disperse and complex technologies required to adopt containers, Kubernetes, cloud, CI/CD
-* Remain competitive: How to adopt best practices in each stage of the application delivery lifecycle to allow developers to focus on innovation.
-* Remain competitive: Feature development competes with modernization efforts reducing the opportunity for modernization.
-* Time to market: Lacking a self-service developer experience increases the time spent modernizing applications.
+=== 1.2.2 現在のビジネス上の課題
+* 市場投入までの時間: コンテナの作成、構築、保守に必要な学習曲線により、ソフトウェア開発の速度が低下する。
+* 技術専門家の雇用、維持、トレーニング: 費やされる時間とリソースの可用性により、技術スキルをさまざまなレベルの組織に拡張する機会が減少する。
+* モダナイゼーションによる技術的負債の削減: コンテナ、Kubernetes、クラウド、CI/CD の導入に必要な分散した複雑なテクノロジー。
+* 競争力の維持: 開発者がイノベーションに集中できるように、アプリケーション配信ライフサイクルの各段階でベスト プラクティスを採用する方法。
+* 競争力の維持: 機能の新規開発はライブラリの最新化の取り組みと競合し、最新化の機会が減少する。
+* 市場投入までの時間: セルフサービスの開発者の経験が不足すると、アプリケーションの最新化にかかる時間が長くなる。
 
-=== 1.2.3 Current Developer Challenges
-* Learning multiple technologies besides their software tools such as CI/CD, Security, Containers, Cloud.
-* Working on repetitive tasks when automation and best practices are not implemented
-* Spending time when lack of patterns and guidelines are not implemented
-* Context switching between a diverse number of tools 
+=== 1.2.3 現在の開発者の課題
+* CI/CD、セキュリティ、コンテナ、クラウドなど、ソフトウェア ツール以外の複数のテクノロジーを学習する必要がある
+* 自動化やベストプラクティスが実装されていない場合に、同じ作業を繰り返す必要がある
+* 定型作業に考慮漏れがあった場合や、ガイドラインが存在しない場合に時間を浪費する
+* 多様なツールを使っており、それぞれで考え方を切り替えなければいけない
 
-=== 1.2.3 Red Hat Developer Hub Benefits
+=== 1.2.3 Red Hat Developer Hub の利点
 
-The Red Hat® Developer Hub is a developer portal that promotes efficiency and collaboration by visually consolidating elements of the development process. It streamlines onboarding speed, developer productivity, and collaboration through a unified and open platform while reducing cognitive load and frustration for the development team. With pre-architected and supported approaches, and by centralizing technology resources, developer focus can center on delivering a competitive advantage for their organization.
+Red Hat® Developer Hub は、開発プロセスの要素を視覚的に統合することで、効率性とコラボレーションを促進する開発者ポータルです。統一されたオープンなプラットフォームを通じて、オンボーディングの高速化、開発者の生産性向上、コラボレーションを合理化し、開発チームの認知負荷とフラストレーションを軽減します。事前に設計されたサポートされたアプローチを使用しながらテクノロジーリソースの一元化することで開発者は組織の競争優位性の実現に集中することができます。
 
+開発チームは、適切なツール、検証済みの環境、オンデマンド サービスを提供することで、ワークフローがスムーズに実行されるように支援できます。不必要な官僚主義を導入することなく、ソフトウェアが組織のベスト プラクティスと標準に準拠しているという確信が得られます。よりメンテナンスを管理しやすくなり、将来的にチームはガバナンスを強化しながら、既知の信頼できる環境内で簡単に運用を引き継ぐことができます。 https://www.redhat.com/en/technologies/cloud-computing/developer-hub[詳しくはこちら^]
 
-Development teams can help make sure workflows run smoothly by providing the right tools, validated environments, and on-demand services. Confidence is gained that software will adhere to organizational best practices and standards without introducing unnecessary bureaucracy. Maintenance becomes more manageable, and future teams can easily assume control within a known, trusted environment, while also enhancing governance. https://www.redhat.com/en/technologies/cloud-computing/developer-hub[More information^]
-
-=== 1.3 Red Hat Developer Hub Architecture
+=== 1.3 Red Hat Developer Hub のアーキテクチャ
 
 image::intro/red_hat_developer_hub_assets.png[]
 
-1- *Software Catalog*: a centralized location to keep software metadata for quick discovery and access. In this workshop, you can see all the catalogs available from all users.
+1- *ソフトウェアカタログ(Software Catalog)*: ソフトウェアの迅速な識別とアクセスのために使用するメタデータを一元管理する場所。このワークショップでは、すべてのユーザーが入手できるすべてのカタログを確認できます。
 
-2- *Tech Docs*: a centralized place for your developer's documentation. Customers can add their own process and technology documentation for easy and quick access.
+2- *テクニカルドキュメント(Tech Docs)*: 開発者向けドキュメントを一元的に管理する場所。お客様は独自のプロセスとテクノロジーのドキュメントを追加して、簡単かつ迅速にアクセスできます。
 
-3- *Plugins*: Plugins will allow customizations on the Red Hat Developer Hub to include new capabilities such as CI/CD and security insights.
+3- *プラグイン(Plugins)*: プラグインを使用する事で Red Hat Developer Hub をカスタマイズして、CI/CD やセキュリティに関する洞察(insight)などの新機能を組み込むことができます。
 
-4- *Software Templates*: will be used to create components to bring the applications into the platform according to runtimes and specific configurations.
+4- *ソフトウェアテンプレート(Software Templates)*: ランタイムや特定の構成に従ってアプリケーションをプラットフォームに取り込むためのコンポーネントを作成するために使用します。
 
-5- *Search*: access all the components created quickly by using the Search functionality. 
+5- *検索(Search)*: 検索機能を使用することで作成したすべてのコンポーネントにすばやくアクセスします。
 
-=== 1.4 Explore Red Hat Developer Hub
+=== 1.4 Red Hat Developer Hub を探索する
 
-=== 1.4.1 Access Red Hat Developer Hub
+=== 1.4.1 Red Hat Developer Hub へのアクセス
 
-Red Hat Developer Hub has already been installed and configured in the workshop environment.
+Red Hat Developer Hub はワークショップ環境にすでにインストールされ、設定されています。
 
-To get started, access https://developer-hub-rhdhub.%SUBDOMAIN%[Red Hat Developer Hub UI^]
+開始するには https://developer-hub-rhdhub.%SUBDOMAIN%[Red Hat Developer Hub UI^] にアクセスしてください。
 
 
-Red Hat Developer Hub is already configured with https://access.redhat.com/products/red-hat-single-sign-on/[Red Hat Single Sign On^]. Log in with your OpenShift credentials:
+Red Hat Developer Hub はすでに https://access.redhat.com/products/red-hat-single-sign-on/[Red Hat Single Sign On^] が設定されています。OpenShift 認証情報を使用してログインします:
 
- * *Username*: `%USERID%`
- * *Password*: `{openshift-password}`
+ * *ユーザー名*: `%USERID%`
+ * *パスワード*: `{openshift-password}`
  
 image::intro/authentication.png[]
 
-=== 1.4.2 Quick tour of Red Hat Developer Hub
+=== 1.4.2 Red Hat Developer Hub のクイックツアー
 
-*Welcome to Red Hat Developer Hub!*
+*Red Hat Developer Hub にようこそ！*
 
 image::intro/welcome.png[]
 
-On the main screen, you will see the *Quick Access* section:
+最初の画面には *クイックアクセス(Quick Access)* セクションが表示されます:
 
-*Note*: The following links are pre-defined and can be configured and updated. 
+*注*: 次のリンクは事前に設定されているもので、設定変更ができます。 
 
-* *Community*: resources to connect with the community from websites, blogs, Slack, and videos.
+* *Community*: Web サイト、ブログ、Slack、動画サイトなどのコミュニティとつながるためのリソース。
 
-* *Developer tools*: website links to developer tools.
+* *Developer tools*: 開発者ツールへのWebサイトのリンク。
 
-* *CI/CD tools*: From OpenShift Pipelines, OpenShift GitOps to Quay.io.
+* *CI/CD tools*: OpenShiftのパイプラインやGitOpsからQuay.ioまで。
 
-* *OpenShift clusters*: OpenShift cluster.
+* *OpenShift clusters*: OpenShift のクラスター。
 
-* *Security tools*: Keycloak.
-
-
-At your left, the *Red Hat Developer Hub* menu:
+* *Security tools*: Keycloak。
 
 
-*Navigate each of the menu items to explore the different solutions:*
+左側にある *Red Hat Developer Hub* のメニュー:
+
+
+*各メニュー項目に移動して、さまざまなソリューションを探索します:*
 
 
 image:intro/rhdevhub_menu.png[width=45%, float=left]  
 
-* *Catalog* is the Software Catalog available to build and deploy applications. 
+* *Catalog* アプリケーションの構築とデプロイに使用できるソフトウェアのカタログ。
 
-* *APIs* available for developers to consume.
+* *APIs* 開発者が使用できるAPI。
 
-* *Docs*:  customer documentation that developers and DevOps can access as part of the company guidelines and best practices.
+* *Docs*: 開発者とDevOps担当者が会社のガイドラインとベストプラクティスの一部としてアクセスできるお客様内のドキュメント。
 
-* *Learning Paths*: Developers and DevOps can utilize customer learning paths to learn and advance their skills.
+* *Learning Paths*: 開発者とDevOps担当者はお客様独自の顧客のラーニング パスを利用してスキルを学習し、向上させることができる。
 
-** Search for the *Learning Path*: *Developing on OpenShift*
-** Click on the link. 
+** *Learning Path* を開いて *Developing on OpenShift* を探します。:
+** リンクをクリックしてください。 
 
 image:intro/learning_paths_explore.png[width=40%]  
 
-* Continue exploring the menu:
+* メニューの探索を続けます:
 
-** Go back to the https://developer-hub-rhdhub.%SUBDOMAIN%[Red Hat Developer Hub UI^]
+** https://developer-hub-rhdhub.%SUBDOMAIN%[Red Hat Developer Hub の UI^] に戻ってください。
 
-* *Clusters*: will show your managed clusters. At this time, we are not using https://www.redhat.com/en/technologies/management/advanced-cluster-management[Red Hat Advanced Cluster Management for Kubernetes^] for cluster management. You will see a message: *Could not fetch clusters from Hub*.
+* *Clusters*: にはあなたが管理をしているクラスターが表示されます。今回は https://www.redhat.com/en/technologies/management/advanced-cluster-management[Red Hat Advanced Cluster Management for Kubernetes^] を使用していません。そのため次のようなメッセージが評されます。: *Could not fetch clusters from Hub*
 
-* *Tech Radar*: Company radar to understand their modernization technology landscape. This information will be customized by each company.
+* *Tech Radar*: 近代化テクノロジーの状況を理解するための企業レーダー。この情報は各企業によってカスタマイズされています。
 
 image:intro/tech_radar.png[width=100%] 
 
 
-* *Create*: Developers can build and deploy their applications by creating a component by choosing a pre-defined template. You will spend most of your time during this module on this feature.
+* *Create*: 開発者は、事前定義されたテンプレートを基にコンポーネントを作成し、アプリケーションを構築およびデプロイできます。このモジュールでは主にこの機能を使っていきます。
 
 image:intro/software_templates_all.png[width=120%] 
 
-*Software Templates* are built based on best practices to create a repeatable process for developers.
+*Software Templates* は開発者にとって反復可能なプロセスを作成するためのベストプラクティスに基づいて構築されています。
 
-Find more information about the Red Hat Developer Hub https://developers.redhat.com/rhdh[here^].
+Red Hat Developer Hub についてより詳細な情報が欲しい場合は https://developers.redhat.com/rhdh[こちら^] にアクセスしてください。
 
-=== 1.4.3 Explore Software Templates
+=== 1.4.3 ソフトウェアテンプレートの探索
 
-Each Software Template is already built based on Application architectures and frameworks such as Quarkus, Spring Boot, and Angular. 
-The templates are composed of everything that is required for an application to be built, deployed and managed in *OpenShift*. 
+いくつかのソフトウェア テンプレートが Quarkus、Spring Boot、Angular などのアプリケーション アーキテクチャとフレームワークを使うようにすでに構築されています。
+それぞれのテンプレートは *OpenShift* でアプリケーションを構築、デプロイ、管理するために必要になるものすべてを含んでいます。
 
-The Software templates are stored on our instance of GitLab created for this workshop.
+このワークショップ用に作成された GitLab のインスタンスにソフトウェアテンプレートは保存されます。
 
-* Explore the templates available:
-** Access from your web browser our https://gitlab-gitlab.%SUBDOMAIN%/rhdhub/software-templates[GitLab^] instance.
-** You are on the Software Templates repository, *rhdhub/software-templates*.
-** Click on the *showcase-templates.yaml* file. This file defines the templates shown on the Software Templates web page on Red Hat Developer Hub.
-** In this file, you will see all the defined templates per each application type:
+* 利用可能なテンプレートを探索します:
+** Webブラウザを使用して https://gitlab-gitlab.%SUBDOMAIN%/rhdhub/software-templates[GitLab^] インスタンスにアクセスします。
+** 最初にアクセスしたのはソフトウェア テンプレートのリポジトリ *rhdhub/software-templates* です。
+** *showcase-templates.yaml* ファイルをクリックしてください。このファイルは、Red Hat Developer Hub のSoftware TemplatesのWebページに表示されるテンプレートを定義します。 
+** このファイルにはアプリケーションのタイプごとに定義されたすべてのテンプレートが含まれています:
     - scaffolder-templates/frontend/template.yaml
     - scaffolder-templates/spring-backend/template.yaml
     - scaffolder-templates/quarkus-backend/template.yaml
     - scaffolder-templates/gateway/template.yaml
 
 
-* Explore the Application Source code:
-** Go back to the *rhdhub/software-templates* folder
-** Click on *scaffolder-templates* and then click on the *quarkus-backend* folder to explore the software templates for the quarkus application.
+* アプリケーションのソースコードを探索します:
+** *rhdhub/software-templates* フォルダに戻ります。
+** Click on *scaffolder-templates* をクリックして *quarkus-backend* フォルダをクリックして、Quarkusが使われているアプリケーションのソフトウェアテンプレートを探索します。
 
 image:intro/gitlab_st_details.png[width=30%]  
 
-1 - The *template file* is the one defining your workflow when creating a component. 
+1 - *テンプレートファイル* はコンポーネントを作るときにワークフローを定義するファイルです。 
 
-* Review the file. The file is composed of parameters and steps. 
-* The parameters define the user interaction when creating a new component, you will be asked to:
-- *Provide information about the GitLab location*
-- *Provide information about the new component*
-- *Provide Build Information*
-* The steps will be executed once you click the *Create* button on the UI workflow.
+* テンプレートファイルを確認します。ファイルはパラメーターとステップで構成されています。 
+* パラメーターには新しいコンポーネントを作成するときのユーザーへの質問項目を定義します。次の事を聞かれます:
+- *GitLabの場所に関する情報提供*
+- *新しいコンポーネントに対する情報提供*
+- *ビルドの情報提供*
+* UI ワークフローの *Create* ボタンをクリックすることでステップが実行されます。
 
-2 - The *skeleton* folder represents the application source code. 
+2 - *skeleton* フォルダはアプリケーションのソースコードを表します。 
 
-* Within the folder you will find the *catalog-info.yaml* file. This file defines the *links* shown on the component overview once the component is created. Contains a link to the *OpenShift* application, *OpenShift Pipelines* and https://developers.redhat.com/products/openshift-dev-spaces/overview[*Red Hat OpenShift Dev Spaces*^] as part of the developer experience to access an integrated IDE for source code changes.
+* フォルダの中に *catalog-info.yaml* ファイルがあります。 このファイルは、コンポーネントの作成後にコンポーネントの概要に表示される *リンク* を定義します。
+*OpenShift* アプリケーションや *OpenShift Pipelines*、 ソースコードを変更するための統合 IDE にアクセスするための開発者体験の一部として https://developers.redhat.com/products/openshift-dev-spaces/overview[*Red Hat OpenShift Dev Spaces*^] へのリンクが含まれています。
 
-3 - The application manifests are composed by:
+3 - アプリケーションのマニフェストは次のもので構成されます:
 
-* *argocd* folder with the application definitions to build and deploy the application using GitOps approach with https://docs.openshift.com/gitops/latest/understanding_openshift_gitops/about-redhat-openshift-gitops.html[*Red Hat OpenShift GitOps*^] . 
-* *helm/app* folder contains all the manifests to deploy the application using *Helm Charts*. 
-* *helm/pipeline* folder contains all the manifests to build the application using https://docs.openshift.com/pipelines/latest/about/understanding-openshift-pipelines.html[*OpenShift Pipelines*^]. 
+* *argocd* フォルダには https://docs.openshift.com/gitops/latest/understanding_openshift_gitops/about-redhat-openshift-gitops.html[*Red Hat OpenShift GitOps*^] によるGitOpsアプローチを使用したアプリケーションの構築やデプロイするためのアプリケーション定義が含まれます。
+* *helm/app* フォルダには *Helm Charts* を使用してアプリケーションをデプロイするためのすべてのマニフェストが含まれます。 
+* *helm/pipeline* フォルダには https://docs.openshift.com/pipelines/latest/about/understanding-openshift-pipelines.html[*OpenShift Pipelines*^] を使用してアプリケーションを構築するためのすべてのマニフェストが含まれます。
 
 
-=== 1.4.4 Red Hat Developer Hub Configurations
+=== 1.4.4 Red Hat Developer Hub の設定
 
-Red Hat Developer Hub is flexible and supports multiple plugins. The following diagram describes how the components described interact with each other.
+Red Hat Developer Hub は柔軟に設定でき、複数のプラグインをサポートします。次の図では今までに説明したコンポーネントがどのように影響しあうかを示しています
 
 image:intro/rhdh_architecture.png[width=50%]  
 
-*Congratulations!*
+*おめでとうございます！*
 
-You have completed the introduction module and learned about Red Hat Developer Hub. In the following modules, you will experience firsthand the value added to the business by simplifying the developer experience.
+あなたは導入モジュールを完了し、Red Hat Developer Hub について学びました。次のモジュールでは、開発者の体験を最適化することでビジネスに付加される価値を直接体験します。
