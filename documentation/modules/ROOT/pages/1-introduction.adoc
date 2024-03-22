@@ -1,4 +1,4 @@
-= 1. Introduction and Overview - 15 minutes
+= 1. 導入と概要 - 15 分
 :imagesdir: ../assets/images
 
 == 1.1 導入と概要 - 15 分
