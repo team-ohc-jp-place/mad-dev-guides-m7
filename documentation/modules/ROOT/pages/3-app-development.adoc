@@ -276,7 +276,7 @@ image:module3/frontend_pipeline.png[width=100%]
 
 * デプロイメント *frontend-app-%USERID%* をクリックします。
 
-At your right the application details is available. 
+右側にアプリケーションの詳細が表示されます。
 
 image:module3/frontend_topology.png[width=100%] 
 
