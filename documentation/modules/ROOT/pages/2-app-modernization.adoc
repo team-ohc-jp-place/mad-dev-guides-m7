@@ -3,7 +3,7 @@
 
 == このラボの目標
 
-このラボは、開発者が Red Hat Developer Hub を使用して OpenShift Application Platform にアプリケーションを移行することで、アプリケーションを迅速に最新化する方法を学ぶことを目的としています。Red Hat Developer Hub は *Red Hat Single Sign-On* と *OpenShift Pipelines* 、 *OpenShift GitOps* 、*GitLab* を使用してすでに設定されています。このセクションでは Red Hat Developer Hub を使用して、 *Cool Store アプリケーション* の一部であるすべてのバックエンドのマイクロサービスを数回クリックするだけで移行します。
+このラボは、開発者が Red Hat Developer Hub を使用して OpenShift Application Platform にアプリケーションを移行しつつアプリケーションを迅速に最新化する方法を学ぶことを目的としています。Red Hat Developer Hub は *Red Hat Single Sign-On* と *OpenShift Pipelines* 、 *OpenShift GitOps* 、*GitLab* を使用してすでに設定されています。このセクションでは Red Hat Developer Hub を使用して、 *Cool Store アプリケーション* の一部であるすべてのバックエンドのマイクロサービスを数回クリックするだけで移行します。
 
 *モジュールの目標*:
 
