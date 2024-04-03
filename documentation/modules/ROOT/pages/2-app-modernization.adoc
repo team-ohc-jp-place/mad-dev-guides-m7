@@ -48,7 +48,7 @@ image:module2/st_gitlab_info.png[width=65%]
 
 * *Repo Group*: すでに構成されている GitLabの組織です。Red Hat Developer Hub はこの入力データを使用してソースリポジトリとマニフェストをアップロードします。
 
-* *Next Step* をクリックします。
+* *Next* をクリックします。
 
 *Step 2* - クラスター ID に関する情報を入力します:
 
@@ -89,7 +89,7 @@ image:module2/st_component_namespace.png[width=40%]
 
 image:module2/st_component_owner.png[width=40%]  
 
-* *Next Step* をクリックします。
+* *Next* をクリックします。
 
 *Step 3* - ビルド情報を入力します:
 
@@ -109,9 +109,9 @@ inventory-app-%USERID%
 
 image:module2/st_component_componentid_quarkus.png[width=40%]  
 
-* *Next Step* をクリックします。
+* *Review* をクリックします。
 
-* *Review and Create*
+* *データのレビュー*
 
 *サンプルデータ*
 
@@ -125,7 +125,7 @@ image:module2/st_component_review_quarkus.png[width=80%]
 
 * すべてのアクティビティが緑色になった状態で、 *Open Component in catalog* をクリックします。
 
-image:module2/task_activity.png[width=50%]  
+image:module2/task_activity.png[width=100%] 
 
 * RHDH が新しいタブを開き、コンポーネント情報が表示されます。
 
@@ -137,8 +137,8 @@ image:module2/inventory_overview.png[width=100%]
 
 image:module2/inventory_source.png[width=50%] 
 
-* https://developer-hub-rhdhub.%SUBDOMAIN%/catalog/default/component/inventory-app-%USERID%[Red Hat Developer Hub の UI^] のインベントリコンポーネントに戻ります。
-* *TEKTON* タブをクリックしてパイプライン情報を確認します。パイプラインは数秒以内にトリガーされます。数分後、パイプラインが *Succeeded* として終了したことが表示されます。
+* https://developer-hub-backstage-rhdhub.%SUBDOMAIN%/catalog/default/component/inventory-app-%USERID%[Red Hat Developer Hub の UI^] のインベントリコンポーネントに戻ります。
+* *CI* タブをクリックしてパイプライン情報を確認します。パイプラインは数秒以内にトリガーされます。数分後、パイプラインが *Succeeded* として終了したことが表示されます。
 
 image:module2/inventory_pipeline.png[width=100%] 
 
@@ -180,7 +180,7 @@ image:module2/st_gitlab_info.png[width=65%]
 
 * *Repo Group*: すでに構成されている GitLabの組織です。Red Hat Developer Hub はこの入力データを使用してソースリポジトリとマニフェストをアップロードします。
 
-* *Next Step* をクリックします。
+* *Next* をクリックします。
 
 *Step 2* - クラスター ID に関する情報を入力します:
 
@@ -221,7 +221,7 @@ image:module2/st_component_namespace.png[width=40%]
 
 image:module2/st_component_owner.png[width=40%]  
 
-*Next Step* をクリックします。
+*Next* をクリックします。
 
 *Step 3* - ビルド情報を入力します:
 
@@ -241,9 +241,9 @@ catalog-app-%USERID%
 
 image:module2/st_component_componentid_spring.png[width=50%]  
 
-* *Next Step* をクリックします。
+* *Review* をクリックします。
 
-* *Review and Create*
+* データのレビュー
 
 *サンプルデータ*
 
@@ -257,7 +257,7 @@ image:module2/st_component_review_spring.png[width=80%]
 
 * すべてのアクティビティが緑色になった状態で、 *Open Component in catalog* をクリックします。
 
-image:module2/task_activity.png[width=65%]   
+image:module2/task_activity.png[width=100%]   
 
 * RHDH が新しいタブを開き、コンポーネント情報が表示されます。
 
@@ -267,13 +267,15 @@ image:module2/catalog_overview.png[width=100%]
 
 * *Overview* タブから *Pipelines* をクリックしOpenShift上のパイプラインの詳細を確認します。
 
+*注*: Pipelines が表示されない場合は、リンクをもう一度クリックして OpenShift Pipelines の詳細にリダイレクトされていることを確認してください。
+
 image:module2/overview_pipelines_click.png[width=65%] 
 
 パイプラインが緑になるまで待ちます。パイプラインは数分で完了するでしょう。
 
 image:module2/pipelines_openshift.png[width=65%] 
 
-* https://developer-hub-rhdhub.%SUBDOMAIN%/catalog/default/component/catalog-app-%USERID%[Red Hat Developer Hub の UI^]のカタログコンポーネントに戻ります。
+* https://developer-hub-backstage-rhdhub.%SUBDOMAIN%/catalog/default/component/catalog-app-%USERID%[Red Hat Developer Hub の UI^]のカタログコンポーネントに戻ります。
 
 * *Overview* タブから *Deployment* をクリックしOpenShift上のデプロイメントのステータスを確認します。
 

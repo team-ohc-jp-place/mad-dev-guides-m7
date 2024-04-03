@@ -42,7 +42,7 @@ image:module3/st_gitlab_info.png[width=65%]
 
 * *Repo Group*: すでに構成されている GitLabの組織です。Red Hat Developer Hub はこの入力データを使用してソースリポジトリとマニフェストをアップロードします。
 
-*Next Step* をクリックします。
+*Next* をクリックします。
 
 *Step 2* - クラスター ID に関する情報を入力します:
 
@@ -83,7 +83,7 @@ image:module3/st_component_namespace.png[width=40%]
 
 image:module3/st_component_owner.png[width=40%]  
 
-*Next Step* をクリックします。
+*Next* をクリックします。
 
 *Step 3* - ビルド情報を入力します:
 
@@ -103,9 +103,9 @@ gateway-app-%USERID%
 
 image:module3/st_component_componentid_gateway.png[width=65%]  
 
-* *Next Step* をクリックします。
+* *Review* をクリックします。
 
-* *Review and Create*
+* データのレビュー
 
 *サンプルデータ*
 
@@ -118,7 +118,7 @@ image:module3/st_component_review_gateway.png[width=80%]
 
 * すべてのアクティビティが緑色になった状態で、 *Open Component in catalog* をクリックします。
 
-image:module3/task_activity.png[width=65%]  
+image:module3/task_activity.png[width=100%]  
 
 * RHDH が新しいタブを開き、コンポーネント情報が表示されます。
 
@@ -126,7 +126,7 @@ image:module3/task_activity.png[width=65%]
 
 image:module3/gateway_overview.png[width=100%]  
 
-* *TEKTON* タブをクリックしてパイプライン情報を確認します。
+* *CI* タブをクリックしてパイプライン情報を確認します。
 パイプラインは数秒以内にトリガーされます。数分後、パイプラインが *Succeeded* として終了したことが表示されます。
 
 image:module3/gateway_pipelines.png[width=100%] 
@@ -140,8 +140,10 @@ image:module3/gateway_pipelines.png[width=100%]
 
 image:module3/gateway_deployment.png[width=80%] 
 
-* *KUBERNETES* をクリックしてOpenShift クラスター内のアプリケーションのステータスを確認します。
+* *KUBERNETES* をクリックしてアプリケーションのステータスを確認します。
 ポッドの準備がまだ完了していない場合があります。すべてが緑色になるまで数秒待ちます。
+
+*注*: *1 pod with errors* は *Error Reporting* セクションで示されるようにポッドが失敗したことを示します。この問題は解決され、現在はすべてのポッドが緑色になっています。
 
 image:module3/gateway_yourclusters.png[width=100%] 
 
@@ -181,7 +183,7 @@ image:module3/st_gitlab_info.png[width=65%]
 
 * *Repo Group*: すでに構成されている GitLabの組織です。Red Hat Developer Hub はこの入力データを使用してソースリポジトリとマニフェストをアップロードします。
 
-* *Next Step* をクリックします。
+* *Next* をクリックします。
 
 *Step 2* - クラスター ID に関する情報を入力します:
 
@@ -222,7 +224,7 @@ image:module3/st_component_namespace.png[width=40%]
 
 image:module3/st_component_owner.png[width=40%]  
 
-*Next Step* をクリックします。
+*Next* をクリックします。
 
 *Step 3* - ビルド情報を入力します:
 
@@ -242,9 +244,9 @@ frontend-app-%USERID%
 
 image:module3/st_component_componentid_frontend.png[width=65%]  
 
-* *Next Step* をクリックします。
+* *Review* をクリックします。
 
-* *Review and Create*
+* データのレビュー
 
 *サンプルデータ*
 
@@ -258,7 +260,7 @@ image:module3/st_component_review_frontend.png[width=100%]
 
 * すべてのアクティビティが緑色になった状態で、 *Open Component in catalog* をクリックします。
 
-image:module3/task_activity.png[width=65%]  
+image:module3/task_activity.png[width=100%]  
 
 * RHDH が新しいタブを開き、コンポーネント情報が表示されます。
 
@@ -266,7 +268,7 @@ image:module3/task_activity.png[width=65%]
 
 image:module3/frontend_overview.png[width=100%] 
 
-* *TEKTON* タブをクリックしてパイプライン情報を確認します。
+* *CI* タブをクリックしてパイプライン情報を確認します。
 パイプラインは数秒以内にトリガーされます。数分後、パイプラインが *Succeeded* として終了したことが表示されます。
 
 image:module3/frontend_pipeline.png[width=100%] 
@@ -292,13 +294,13 @@ image:module3/frontend_apiconsume.png[width=100%]
 
 ** https://frontend-app-%USERID%-rhdhub-%USERID%.%SUBDOMAIN%/[Cool Store の Webページ^] をクリックします。
 
-image::module3/final_web.png[width=100%]
+image::module3/ui_web.png[width=100%]
 
 === 3.5 アプリケーションに関して報告された問題を修正する
 
 開発者は多くの機能リクエストや問題に取り組む必要があります。今回はフロントエンドアプリケーションのタイトルの問題を修正します。Red Hat Developer Hub ではアプリのすべてのツールと情報に1か所からアクセスでます。
 
-1. https://developer-hub-rhdhub.%SUBDOMAIN%/catalog/default/component/frontend-app-%USERID%[Red Hat Developer Hub UI^] 上のフロントエンドコンポーネントに戻ります。
+1. https://developer-hub-backstage-rhdhub.%SUBDOMAIN%/catalog/default/component/frontend-app-%USERID%[Red Hat Developer Hub UI^] 上のフロントエンドコンポーネントに戻ります。
 2. *ISSUES* をクリックしてGitLabに登録されている課題を表示します。
 3. アプリケーションに関連するGitLabに登録されている課題を確認できます。
 
@@ -310,7 +312,7 @@ image:module3/frontend_issues.png[width=100%]
 
 image::module3/frontend_issue_desc.png[width=100%]
 
-* https://developer-hub-rhdhub.%SUBDOMAIN%/catalog/default/component/frontend-app-%USERID%[Red Hat Developer Hub の UI^] のフロントエンドコンポーネントに戻ります。
+* https://developer-hub-backstage-rhdhub.%SUBDOMAIN%/catalog/default/component/frontend-app-%USERID%[Red Hat Developer Hub の UI^] のフロントエンドコンポーネントに戻ります。
 
 3. *OVERVIEW* タブから *OpenShift Dev Spaces (VS Code)* をクリックして、ソースコードに必要な変更を加えます。
 
@@ -393,9 +395,9 @@ image::module3/dev_confirmed.png[width=100%]
 
 ソース コードの変更したことでフロントエンドアプリケーションのバージョンを更新するための新しいパイプラインが開始されます。
 
-* https://developer-hub-rhdhub.%SUBDOMAIN%/catalog/default/component/frontend-app-%USERID%[Red Hat Developer Hub の UI^] のフロントエンドコンポーネントに戻ります。
+* https://developer-hub-backstage-rhdhub.%SUBDOMAIN%/catalog/default/component/frontend-app-%USERID%[Red Hat Developer Hub の UI^] のフロントエンドコンポーネントに戻ります。
 
-* *TEKTON* をクリックしてパイプラインを探索します。
+* *CI* をクリックしてパイプラインを探索します。
 
 image::module3/frontend_newpipeline.png[width=100%]
 
@@ -409,7 +411,7 @@ image::module3/final_web.png[width=100%]
 
 ## ボーナスポイント: アプリケーションの依存関係と API を調べる
 
-* https://developer-hub-rhdhub.%SUBDOMAIN%/catalog/default/component/frontend-app-%USERID%[Red Hat Developer Hub の UI^] のフロントエンドコンポーネントに戻ります。
+* https://developer-hub-backstage-rhdhub.%SUBDOMAIN%/catalog/default/component/frontend-app-%USERID%[Red Hat Developer Hub の UI^] のフロントエンドコンポーネントに戻ります。
 
 * *Overview* タブをクリックしてから *workshop-system-rhdhub-%USERID%* セクションをクリックします。
 

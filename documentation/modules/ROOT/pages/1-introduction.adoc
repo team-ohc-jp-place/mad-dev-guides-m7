@@ -56,7 +56,7 @@ image::intro/red_hat_developer_hub_assets.png[]
 
 Red Hat Developer Hub はワークショップ環境にすでにインストールして設定もされています。
 
-開始するには https://developer-hub-rhdhub.%SUBDOMAIN%[Red Hat Developer Hub UI^] にアクセスしてください。
+開始するには https://developer-hub-backstage-rhdhub.%SUBDOMAIN%[Red Hat Developer Hub UI^] にアクセスしてください。
 
 
 Red Hat Developer Hub はすでに https://access.redhat.com/products/red-hat-single-sign-on/[Red Hat Single Sign On^] が設定されています。OpenShift 認証情報を使用してログインします:
@@ -70,7 +70,7 @@ image::intro/authentication.png[]
 
 *Red Hat Developer Hub にようこそ！*
 
-image::intro/welcome.png[]
+image::intro/welcome.png[width=120%]
 
 最初の画面には *Quick Access* セクションが表示されます:
 
@@ -93,28 +93,24 @@ image::intro/welcome.png[]
 *各メニュー項目に移動して、さまざまなソリューションを探索します:*
 
 
-image:intro/rhdevhub_menu.png[width=45%, float=left]  
+image:intro/rhdevhub_menu.png[width=90%, float=left]  
 
 * *Catalog* アプリケーションの構築とデプロイに使用できるソフトウェアのカタログ。
 
 * *APIs* 開発者が使用できるAPI。
 
-* *Docs*: 開発者とDevOps担当者が会社のガイドラインとベストプラクティスの一部としてアクセスできるお客様内のドキュメント。
-
 * *Learning Paths*: 開発者とDevOps担当者はお客様独自の顧客のラーニング パスを利用してスキルを学習し、向上させることができる。
 
-** *Learning Path* を開いて *Developing on OpenShift* を探します。:
+** *Learning Path* を開いて *Developing with Quarkus* を探します。:
 ** リンクをクリックしてください。 
 
 image:intro/learning_paths_explore.png[width=40%]  
 
 * メニューの探索を続けます:
 
-** https://developer-hub-rhdhub.%SUBDOMAIN%[Red Hat Developer Hub の UI^] に戻ってください。
+** https://developer-hub-backstage-rhdhub.%SUBDOMAIN%[Red Hat Developer Hub の UI^] に戻ってください。
 
-* *Clusters*: にはあなたが管理をしているクラスターが表示されますが、今回は https://www.redhat.com/en/technologies/management/advanced-cluster-management[Red Hat Advanced Cluster Management for Kubernetes^] を使用していませんので、次のようなメッセージが評されます。: *Could not fetch clusters from Hub*
-
-* *Tech Radar*: 近代化テクノロジーの状況を理解するための企業レーダー。この情報は各企業によってカスタマイズされています。
+* *Tech Radar*: 近代化テクノロジーの状況を理解するための企業レーダー。この情報は各企業によってカスタマイズされています。詳細は製品ページを参照してください。 https://access.redhat.com/documentation/ja-jp/red_hat_developer_hub/1.1/html/administration_guide_for_red_hat_developer_hub/rhdh-installing-dynamic-plugins[プラグインの構成について^]
 
 image:intro/tech_radar.png[width=100%] 
 
