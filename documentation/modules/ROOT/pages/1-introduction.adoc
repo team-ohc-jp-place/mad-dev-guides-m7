@@ -12,9 +12,9 @@
 
 === 1.2.1 Red Hat Developer Hub とは何か
 
-https://developers.redhat.com/rhdh[Red Hat Developer Hub^] は、Red Hatからのサポートを受けられる独自のフレームワークを含む開発者ポータルを構築するためのエンタープライズグレードのオープンシステムです。Red Hat Developer Hub は、エンジニアリング チームの疲弊や苛立ちを軽減しながら、生産性を向上させ、組織の競争上の優位性を高めるのに役立ちます。 https://backstage.spotify.com/[Backstage^] をアップストリームプロジェクトとして Red Hat Developer Hub は開発されています。 
+https://developers.redhat.com/rhdh[Red Hat Developer Hub^] はRed Hatからのサポートを受けられる独自のフレームワークを含む開発者ポータルを構築するためのエンタープライズグレードのオープンシステムです。Red Hat Developer Hub は、エンジニアリング チームの疲弊や苛立ちを軽減しながら、生産性を向上させ、組織の競争上の優位性を高めるのに役立ちます。 https://backstage.spotify.com/[Backstage^] をアップストリームプロジェクトとして Red Hat Developer Hub は開発されています。 
 
-Red Hat Developer Hub は、クラウドサービスやオンプレミスなどの多様なインフラストラクチャで動作するハイブリッドクラウド上でアプリケーションを構築およびデプロイできます。
+Red Hat Developer Hub はクラウドサービスやオンプレミスなどの多様なインフラストラクチャで動作するハイブリッドクラウド上でアプリケーションを構築およびデプロイできます。
 
 === 1.2.2 現在のビジネス上の課題
 * 市場投入までの時間: コンテナの作成、構築、保守に必要な学習曲線により、ソフトウェア開発の速度が低下する。
@@ -125,10 +125,10 @@ Red Hat Developer Hub についてより詳細な情報が欲しい場合は htt
 
 === 1.4.3 ソフトウェアテンプレートの探索
 
-いくつかのソフトウェア テンプレートが Quarkus、Spring Boot、Angular などのアプリケーションアーキテクチャとフレームワークを使うようにすでに構築されています。
+Quarkus、Spring Boot、Angular などのアプリケーションアーキテクチャとフレームワークを使うために、すでに複数のソフトウェア テンプレートが構築されています。
 それぞれのテンプレートは *OpenShift* でアプリケーションを構築、デプロイ、管理するために必要になるものすべてを含んでいます。
 
-このワークショップ用に作成された GitLab のインスタンスにソフトウェアテンプレートは保存されます。
+このワークショップ用に作成された GitLab のインスタンスにソフトウェアテンプレートが保存されています。
 
 * 利用可能なテンプレートを探索します:
 ** Webブラウザを使用して https://gitlab-gitlab.%SUBDOMAIN%/rhdhub/software-templates[GitLab^] インスタンスにアクセスします。
@@ -158,7 +158,7 @@ image:intro/gitlab_st_details.png[width=30%]
 
 2 - *skeleton* フォルダはアプリケーションのソースコードを表します。 
 
-* フォルダの中に *catalog-info.yaml* ファイルがあります。 このファイルは、コンポーネントの作成後にコンポーネントの概要に表示される *リンク* を定義します。
+* フォルダの中に *catalog-info.yaml* ファイルがあります。 このファイルにはコンポーネントの作成後にコンポーネントの概要に表示される *リンク* を定義します。
 *OpenShift* アプリケーションや *OpenShift Pipelines*、 ソースコードを変更するための統合 IDE にアクセスするための開発者体験の一部として https://developers.redhat.com/products/openshift-dev-spaces/overview[*Red Hat OpenShift Dev Spaces*^] へのリンクが含まれています。
 
 3 - アプリケーションのマニフェストは次のもので構成されます:
