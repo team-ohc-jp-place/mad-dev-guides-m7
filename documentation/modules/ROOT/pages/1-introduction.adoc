@@ -6,13 +6,13 @@
 このモジュールでは、開発者が Red Hat Developer Hub を使用してアプリケーションを構築、デプロイ、管理する方法を示します。Red Hat Developer Hub を使用すると、開発者の疲弊を軽減し、市場投入までの時間を短縮し、迅速なアプローチでソフトウェア開発活動を実行できるようになります。
 
 このモジュールは製品の概要から始まり、次にそのアーキテクチャと主な機能を説明するツアーが続きます。
-バグ修正が必要な *新しいアプリケーションの修正* から、 *一連のマイクロサービスを OpenShift に移動して最新化する* まで、2 つのユースケースを実装します。
+*一連のマイクロサービスをモダナイズするために OpenShift に移動して* 、バグ修正が必要な *アプリケーションを最新化する* 2 つのユースケースを実装します。
 
 == 1.2 Red Hat Developer Hubの概要
 
 === 1.2.1 Red Hat Developer Hub とは何か
 
-https://developers.redhat.com/rhdh[Red Hat Developer Hub^] は、Red Hatからのサポートを受けられる独自のフレームワークを含む開発者ポータルを構築するためのエンタープライズグレードのオープンシステムです。Red Hat Developer Hub は、エンジニアリング チームの疲弊や苛立ちを軽減しながら、生産性を向上させ、組織の競争上の優位性を高めるのに役立ちます。Red Hat Developer Hub は https://backstage.spotify.com/[Backstage^] を、アップストリームプロジェクトとして開発されています。 
+https://developers.redhat.com/rhdh[Red Hat Developer Hub^] は、Red Hatからのサポートを受けられる独自のフレームワークを含む開発者ポータルを構築するためのエンタープライズグレードのオープンシステムです。Red Hat Developer Hub は、エンジニアリング チームの疲弊や苛立ちを軽減しながら、生産性を向上させ、組織の競争上の優位性を高めるのに役立ちます。 https://backstage.spotify.com/[Backstage^] をアップストリームプロジェクトとして Red Hat Developer Hub は開発されています。 
 
 Red Hat Developer Hub は、クラウドサービスやオンプレミスなどの多様なインフラストラクチャで動作するハイブリッドクラウド上でアプリケーションを構築およびデプロイできます。
 
