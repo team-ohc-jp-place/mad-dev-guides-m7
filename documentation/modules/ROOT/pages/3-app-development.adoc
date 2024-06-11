@@ -428,6 +428,3 @@ image::module3/workshop_detail.png[width=100%]
 ## Congratulations!
 
 You have successfully built the Cool Store application and learned the benefits of Red Hat Developer Hub with Software Templates reduce developer cognitive load by providing pre-architected and supported approaches to building and deploying a service or software component without having to learn all the details of the technology used to create it.
-
-
-
